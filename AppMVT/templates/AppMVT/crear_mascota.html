@@ -1,0 +1,24 @@
+{% extends "AppMVT/base.html" %}
+    {% load static %}
+
+{% block cuerpo %}
+
+<h5>En este formulario puedes ingresar nuevas Mascotas</h5>
+</br>        
+<form action="" method="POST">{% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <br></br>
+    <input type="submit" value="Registrar Mascota">    
+</form>
+</br>
+<a class="buttons-forms" href="{% url 'listar_mascotas' %}">||| Volver a la lista de Mascotas |||</a>
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+{% endblock cuerpo %}

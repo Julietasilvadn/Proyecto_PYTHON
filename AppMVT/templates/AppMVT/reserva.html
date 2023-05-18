@@ -1,0 +1,24 @@
+{% extends "AppMVT/base.html" %}
+
+{% block cuerpo  %}
+
+Reserva un día
+
+<h4>
+    
+    <br>
+    <br>
+    <br>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <ul>
+          {{ miReserva }}
+        </ul>
+        
+        <input type="submit", id="btn-submit", value="Reservar" >
+    </form>
+      
+    
+  </h4>
+{% endblock %}

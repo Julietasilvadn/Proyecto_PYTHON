@@ -1,0 +1,18 @@
+{% extends "AppMVT/base.html" %}
+    {% load static %}
+
+{% block cuerpo %}
+
+<body>    
+    <br></br>
+    <h4>Inicio de Sesion</h4>
+    <form action="" method="POST">{% csrf_token %}
+
+        {{form.as_p}}
+
+        <button type="submit"> Iniciar Sesión</button>
+        <br></br>
+    </form>
+</body>
+
+{% endblock cuerpo %}    

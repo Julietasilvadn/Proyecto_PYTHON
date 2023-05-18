@@ -1,0 +1,27 @@
+Nombre del Proyecto:	Spa Animal	Navegador:	Chrome		
+No Caso de Prueba:	100	Versión:	Versión 103.0.5060.134 		
+Escrito Por:	Julieta	Descripción:	-		
+Probado Por:	Julieta | Lara	Probado en:	Windows		
+					
+Prueba #	Fecha	Acción	Resultado esperado	Resultado actual	Aprobado
+1	21/08/2022	Log In	"Iniciar sesion de usuario y
+mantener abierta"	"Inicia sesion con el usuario y
+mantiene la sesion abierta"	VERDADERO
+2	17/08/2022	Registrarse	Tomar datos y cargar en la BD	"Toma los datos y se 
+guardan en la BD"	VERDADERO
+3	17/08/2022	Listar Usuarios 	"Listar todos los usuarios
+ registrados"	"Lista todos los usuarios
+una vez que son registrados"	VERDADERO
+4	21/08/2022	Editar Usuario	"Modificar datos de los 
+usuarios"	"Permite modificar los datos
+del usuario"	VERDADERO
+5	21/08/2022	Modificar Mascotas	"Modificar datos de las
+mascotas"	"Permite modificar los datos
+de las mascotas"	VERDADERO
+6		Eliminar Mascotas	Eliminar mascotas	Elimina las mascotas	VERDADERO
+7		Los Out	"Salir de la sesion del
+usuario previamente iniciado"	Sale de la sesion	VERDADERO
+					
+
+
+Link de excel: https://docs.google.com/spreadsheets/d/1LvfZg9E8g-AkMy2OpgqwU4t55sA7etqdjVxXc6p9qaw/edit#gid=0

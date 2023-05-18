@@ -1,0 +1,34 @@
+
+
+{% extends "../AppMVT/base.html" %}
+{% load static %}
+
+{% block cuerpo  %}
+
+<h5>Lista de Usuarios</h5>
+</br>
+<ul>
+{% for user in object_list %}
+
+<li>        
+            <p><strong>Usuario: {{ user.username }} </strong></p>
+            
+        
+            
+            <p class="buttons-forms"> 
+                <a class="buttons-forms" href="{% url 'detalle_usuario' user.id %}">Ver</a> | 
+                <a class="buttons-forms" href="{% url 'modificar_usuario' user.id %}">Editar</a> | 
+            </p> 
+
+    {% endfor %}
+</li>
+
+</ul>
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+{% endblock cuerpo %}

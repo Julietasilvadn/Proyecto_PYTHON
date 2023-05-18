@@ -1,0 +1,24 @@
+{% extends "AppMVT/base.html" %}
+{% load static %}
+
+{% block cuerpo %}
+
+<h5>Detalle del Usuario: <i>  {{ object.username }}</i> </h5>
+</br>
+
+<p><strong>Nombre:<i>  {{ object.first_name }}  </i></strong></p>
+<p><strong>Apellido:<i>  {{ object.last_name }}  </i></strong></p>
+<p><strong>Email:<i>  {{ object.email }}  </i></strong></p>
+
+
+<p class="buttons-forms">
+    <a class="buttons-forms" href="{% url 'listar_usuarios'  %}">Regresar</a>
+</p>
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+{% endblock cuerpo %}

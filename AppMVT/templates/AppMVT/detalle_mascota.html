@@ -1,0 +1,31 @@
+{% extends "AppMVT/base.html" %}
+{% load static %}
+
+{% block cuerpo %}
+
+<h5>Detalle de la Mascota: <i>  {{ object.nombre }}</i> </h5>
+</br>
+
+<p><strong>Nombre:<i>  {{ object.nombre }}  </i></strong></p>
+<p><strong>Nacimiento:<i>  {{ object.nacimiento }}  </i></strong></p>
+
+{% if object.imagen %}
+
+            <img height="80" src= "{{object.imagen.url}}" /> 
+
+{% endif %}
+
+
+<p class="buttons-forms">
+    <a class="buttons-forms" href="{% url 'listar_mascotas'  %}">Regresar</a>
+</p>
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+{% endblock cuerpo %}
+            
+        <!-- FIN CONTENIDO DINAMICO DE PAGINA-->

@@ -1,0 +1,26 @@
+{% extends "AppMVT/base.html" %}
+    {% load static %}
+
+    {% block cuerpo  %}
+
+<h5>Modificar Mascota</h5>
+</br>
+<form  method="post"> {% csrf_token %}
+    <table >
+        {{ form.as_p }}
+    </table>
+    
+    <input type="submit" value="Modificar" />
+</form>
+<br></br>
+<a class="buttons-forms" href="{% url 'listar_mascotas' %}">||| Volver a las Mascotas|||</a>
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+{% endblock cuerpo %}
+            
+        <!-- FIN CONTENIDO DINAMICO DE PAGINA-->

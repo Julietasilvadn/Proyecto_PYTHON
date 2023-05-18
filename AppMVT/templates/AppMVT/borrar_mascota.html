@@ -1,0 +1,29 @@
+{% extends "AppMVT/base.html" %}
+    {% load static %}
+
+    {% block cuerpo  %}
+
+<h5>Eliminar Mascota:</h5>
+</br>
+
+<form method="POST"> {% csrf_token %}
+
+    <p><strong>Esta completamente seguro que desea eliminar esta "MASCOTA""{{ object }}"?</strong></p>
+
+<input type="submit" value="Estas Seguro de Borrar la Mascota?">
+</form>
+
+<br></br>
+<a class="buttons-forms" href="{% url 'listar_mascotas' %}">||| Volver a las Mascotas |||</a>
+
+
+<style>
+    .buttons-forms{
+        color:black;
+    }
+</style>
+
+
+{% endblock cuerpo %}
+            
+        <!-- FIN CONTENIDO DINAMICO DE PAGINA-->
